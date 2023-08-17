@@ -6,7 +6,9 @@ public class TestRunner {
 
 	@Karate.Test
 	public Karate runTest()	{
+		// Address for out feature files
+		// tags. for certain test
 		return Karate.run("classpath:features") // address for feature file
-				.tags("Regression");
+				.tags("@Regression");
 	}
 }
