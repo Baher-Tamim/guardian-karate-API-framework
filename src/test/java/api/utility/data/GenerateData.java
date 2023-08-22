@@ -17,7 +17,8 @@ public class GenerateData {
 			String number = getPhoneNumber();
 			System.out.println(number);
 			System.out.println(number.length());
-			
+			GenerateData data = new GenerateData();
+			System.out.println(data.getEmail());
 		}
 		
 		// Generating random email
