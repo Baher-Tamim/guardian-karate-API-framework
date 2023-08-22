@@ -17,6 +17,7 @@ public class GenerateData {
 			String number = getPhoneNumber();
 			System.out.println(number);
 			System.out.println(number.length());
+			String email = getEmail();
 			GenerateData data = new GenerateData();
 			System.out.println(data.getEmail());
 		}
