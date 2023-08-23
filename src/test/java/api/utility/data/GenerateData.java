@@ -20,6 +20,7 @@ public class GenerateData {
 			String email = getEmail();
 			GenerateData data = new GenerateData();
 			System.out.println(data.getEmail());
+			System.out.println(getUsername());
 		}
 		
 		// Generating random email
@@ -41,4 +42,11 @@ public class GenerateData {
 			// GenerateData data = new GenerateData();
 			// System.out.println(data.getEmail());	
 		// }
+
+		public static String getUsername()	{
+			String prefix = "api_user";
+			int random = (int)(Math.random()*10000);
+			return prefix.concat(String.valueOf(random));
+		}
+
 }
